@@ -1,0 +1,19 @@
+🚀 Day 6: Spring Boot Learning Journey 🚀
+
+Today, I made some significant strides in my Spring Boot project. I tackled exception handling and logger configuration and worked through some Gradle build issues.
+
+💡 What I Worked On:
+
+Exception Handling: Implemented custom exception handling to manage errors more effectively, including cases where input is invalid (e.g., name cannot be "kiran"). Although I haven't fully mastered custom exceptions yet, I made progress by learning to throw and handle exceptions in Spring Boot.
+Logger Configuration: Added logging to my application to trace execution and understand the flow of data, which is crucial for debugging and monitoring.
+Gradle Build Time: Explored ways to optimize build times in Gradle to improve development efficiency.
+🔍 Challenges Faced:
+
+Gradle Build Time: I’m still working on optimizing Gradle build times to speed up development.
+Exception Handling Details: While I’ve set up basic exception handling, I’m continuing to refine my understanding of custom exceptions and their management.
+Logger Setup: Configuring and using loggers effectively was a learning curve, but it’s helping me keep track of application behavior.
+🔗 Check Out My Progress: I’ve updated my code on GitHub. Feel free to explore and join me in this learning journey!
+
+🙌 Join My Learning Journey: If you’re also diving into Spring Boot or facing similar challenges, let’s connect and share insights. Your feedback and suggestions are always welcome!
+
+#SpringBoot #Java #CodingJourney #Learning #TechCommunity #CodeWithKiran #Gradle #Logging
