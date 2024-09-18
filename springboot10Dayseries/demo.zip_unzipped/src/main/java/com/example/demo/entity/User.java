@@ -41,4 +41,9 @@ public class User {
     public String getEmail(){
         return email;
     }
+
+    public static Object withUsername(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'withUsername'");
+    }
 }
