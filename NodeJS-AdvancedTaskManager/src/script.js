@@ -1,5 +1,10 @@
 console.log("script.js file invoked");
 
+import { Task } from "./task.js";
+
+import { TaskManager } from "./TaskManager.js";
+const taskManager = new TaskManager();
+
 window.onButtonClick = function() {
     const textEntered =document.getElementById('task-input');
     console.log(textEntered.value);
@@ -25,13 +30,16 @@ const listElement = (item) =>{
     divElement1.id= item;
     buttonElement.innerHTML='Remove';
 
-    // const task = new task(item,item+"completed",'pending',Date.now());
-    //  console.log(task);
+    //const newTask = new Task(item,item+" completed",'pending',Date.now());
+    taskManager.addTask(item,item+" completed",'pending',Date.now());
+    taskManager.displayTasks();
+
     buttonElement.addEventListener('click',()=>{
         const ulElement = document.getElementById('task-list');
         const ulElements = document.getElementsByTagName('li');
         const parentElement = buttonElement.parentElement;
         parentElement.remove();
+        taskManager.deleteTask(item);
         console.log(ulElements);
     });
     divElement1.append(li);
