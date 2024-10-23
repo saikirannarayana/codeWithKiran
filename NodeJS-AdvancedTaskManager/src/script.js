@@ -31,13 +31,15 @@ const listElement = (item) =>{
     buttonElement.innerHTML='Remove';
 
     //const newTask = new Task(item,item+" completed",'pending',Date.now());
-    taskManager.addTask(item,item+" completed",'pending',Date.now());
+    taskManager.addTask(item,item+" completed",'pending',Date.now() + 5 * 1000);
+    logTaskDetails.call();
     taskManager.displayTasks();
 
     buttonElement.addEventListener('click',()=>{
         const ulElement = document.getElementById('task-list');
         const ulElements = document.getElementsByTagName('li');
         const parentElement = buttonElement.parentElement;
+        //console.log(item);
         parentElement.remove();
         taskManager.deleteTask(item);
         console.log(ulElements);
@@ -57,6 +59,19 @@ const editTaskComponent = () =>{
     return checkboxElement;
 };
 
+window.sortTasksByDueDate = () =>{
+    console.log("sortTasksByDueDate invoked in script.js");
+ const fn=taskManager.sortTasksByDueDate.bind(taskManager);
+ fn();
+};
+
 const checkboxBoxEventListener = () =>{
     
 };
+
+const logTaskDetails =() => {
+    console.log(`Task Name: ${this.name}`);
+    console.log(`Description: ${this.description}`);
+    console.log(`Status: ${this.status}`);
+    console.log(`Due Date: ${this.dueDate}`);
+}

@@ -17,8 +17,9 @@ export class TaskManager{
     };
 
     deleteTask = (item) =>{
-        this.tasks.pop;
-        console.log(this.tasks);
+        console.log(item.name);
+        // this.tasks.pop;
+        // console.log(this.tasks);
         console.log("delete this item");
         
     };
