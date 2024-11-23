@@ -9,9 +9,17 @@
     <div id="task-container">
         <h1>Task Manager</h1>
         <input type="text" id="task-input" placeholder="Enter a task" />
+        
+
+          
+    
         <button id="add-task-btn" onclick="onButtonClick()">Add Task</button>
+
+        <button onclick="sortTasksByDueDate()">Sort by Due Date</button>
+            <button onclick="sortTasksByStatus()">Sort by Status</button>
         <ul id="task-list"></ul>
     </div>
+      
     <script src="../src/script.js" type="module"></script>
 </body>
 </html>

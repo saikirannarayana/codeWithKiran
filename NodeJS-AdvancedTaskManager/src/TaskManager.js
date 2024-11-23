@@ -23,4 +23,24 @@ export class TaskManager{
         console.log("delete this item");
         
     };
+
+    sortTasksByStatus = () =>{
+
+    };
+
+    sortTasksByDueDate = () =>{
+        console.log(this.tasks);
+        // this.tasks.forEach((task)=>{
+        //     console.log(task.dueDate);
+        // });
+        //sorting the array 
+
+        this.tasks.sort((task1, task2)=>{
+            return (task1.dueDate - task2.dueDate)*(-1);
+        });
+
+        this.tasks.forEach((task)=>{
+            console.log(task.name);
+        });
+    };
 };
